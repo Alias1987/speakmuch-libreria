@@ -8,8 +8,14 @@ public class Alumno {
 
 	public Alumno() {
 	}
+		
+	public Alumno(String nombre, String dni, String email) {
+    this.nombre = nombre;
+    this.dni = dni;
+    this.email = email;
+  }
 
-	public String getNombre() {
+  public String getNombre() {
 		return nombre;
 	}
 

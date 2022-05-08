@@ -8,8 +8,15 @@ public class Contenido {
 
 	public Contenido() {
 	}
+	
+	public Contenido(String idioma, String nivel, int numeroHora, int precioPorHora) {
+    this.idioma = idioma;
+    this.nivel = nivel;
+    this.numeroHora = numeroHora;
+    this.precioPorHora = precioPorHora;
+  }
 
-	public String getIdioma() {
+  public String getIdioma() {
 		return idioma;
 	}
 

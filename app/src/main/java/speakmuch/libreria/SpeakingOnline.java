@@ -2,17 +2,23 @@ package speakmuch.libreria;
 
 import java.net.URL;
 
-public class SpeakingOnline {
+public class SpeakingOnline extends Contenido {
 
-	public URL enlace;
+  public URL enlace;
 
-	public URL getEnlace() {
-		return enlace;
-	}
+  public SpeakingOnline() {
+  }
 
-	public void setEnlace(URL enlace) {
-		this.enlace = enlace;
-	}
-	
-	
+  public SpeakingOnline(URL enlace) {
+    this.enlace = enlace;
+  }
+
+  public URL getEnlace() {
+    return enlace;
+  }
+
+  public void setEnlace(URL enlace) {
+    this.enlace = enlace;
+  }
+
 }
