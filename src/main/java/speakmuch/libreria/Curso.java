@@ -3,7 +3,7 @@ package speakmuch.libreria;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Curso extends AbstractIdentificable {
+public class Curso {
   private Alumno alumno;
   private List<Contenido> contenidos = new ArrayList<>();
 
@@ -31,4 +31,12 @@ public class Curso extends AbstractIdentificable {
     this.contenidos = contenidos;
   }
 
+  public int calcularPrecioTotal() {
+    int acumulador = 0;
+    for (Contenido contenido : getContenidos()) {
+      acumulador += (contenido.numeroHora * contenido.precioPorHora);
+    }
+    return acumulador;
+  }
+  
 }
