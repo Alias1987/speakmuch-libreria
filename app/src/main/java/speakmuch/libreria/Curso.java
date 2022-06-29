@@ -26,7 +26,7 @@ public class Curso {
     this.contenidos = contenidos;
   }
 
-  public int calcularPrecioTotal() {
+  public int getPrecio() {
     int acumulador = 0;
     for (Contenido contenido : getContenidos()) {
       acumulador += (contenido.numeroHora * contenido.precioPorHora);
